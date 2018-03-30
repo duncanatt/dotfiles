@@ -17,7 +17,7 @@ else
 fi
 
 printf "Done. Installing Homebrew bundle.\n"
-brew bundle 
+brew bundle
 
 printf "Setting up GIT configuration..\n"
 
@@ -28,8 +28,8 @@ printf "Enter GIT email: "
 read U_EMAIL
 
 # Copy .gitconfig file to home directory and replace user information.
-cp .gitconfig "$HOME/.gitconfigdd"
-sed -i '' "s/U_NAME/$U_NAME/g; s/U_EMAIL/$U_EMAIL/g" "$HOME/.gitconfigdd"
+cp .gitconfig "$HOME/.gitconfig"
+sed -i '' "s/U_NAME/$U_NAME/g; s/U_EMAIL/$U_EMAIL/g" "$HOME/.gitconfig"
 printf "Done.\n"
 
 # Set up .erlang file, copy and compile user_default file.
