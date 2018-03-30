@@ -159,7 +159,6 @@ for app in "cfprefsd" \
   "Finder" \
   "Photos" \
   "Safari" \
-  "SystemUIServer" \
-  "Terminal"; do
+  "SystemUIServer"; do
   killall "${app}" &> /dev/null
 done
