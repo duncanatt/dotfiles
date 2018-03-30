@@ -44,6 +44,7 @@
     ca = commit -a
     cam = commit -am
     s = status
+    d = diff
     pom = push origin master
     pog = push origin gh-pages
     puom = pull origin master
