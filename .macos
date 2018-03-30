@@ -45,7 +45,7 @@ defaults write NSGlobalDomain AppleMetricUnits -bool true
 
 # Set the clock in the menu bar to show the day of week, date and month, while
 # the time is shown in 24-hour clock.
-defaults write com.apple.menuextra.clock "DateFormat" "EEE MMM d  h:mm:ss"
+defaults write com.apple.menuextra.clock "DateFormat" "EEE MMM d H:mm:ss"
 
 
 ################################################################################
