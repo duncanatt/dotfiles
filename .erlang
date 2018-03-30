@@ -1,0 +1,2 @@
+code:load_abs("U_HOME/user_default").
+io:format("Loading Erlang shell..~n").

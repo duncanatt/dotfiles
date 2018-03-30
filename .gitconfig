@@ -1,0 +1,51 @@
+
+# Configure core options, user information and credential management.
+[core]
+    editor = vim
+[push]
+    default = simple
+[user]
+    name = U_NAME
+    email = U_EMAIL
+[credential]
+    helper = osxkeychain
+
+# Configure colors.
+[color]
+    ui = true
+[color "branch"]
+    current = yellow bold
+    local = green bold
+    remote = cyan bold
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+[color "status"]
+    added = green bold
+    changed = yellow bold
+    untracked = red bold
+
+# Configure URL shorthands.
+[url "https://bitbucket.org/"]
+    insteadOf = bb:
+[url "https://github.com/"]
+    insteadOf = gh:
+[url "https://gist.github.com/"]
+    insteadOf = gist:
+[url "https://gitlab.com/"]
+    insteadOf = gl:
+
+# Configure common aliases.
+[alias]
+    a = add
+    ca = commit -a
+    cam = commit -am
+    s = status
+    pom = push origin master
+    pog = push origin gh-pages
+    puom = pull origin master
+    puog = pull origin gh-pages
+    cob = checkout -b
