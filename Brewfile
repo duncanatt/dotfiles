@@ -1,9 +1,3 @@
-# Make sure the latest Homebrew is running.
-update
-
-# Upgrade and preexisting formulae.
-upgrade
-
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
 
@@ -19,7 +13,6 @@ brew 'python3'
 brew 'erlang'
 brew 'go'
 cask 'java'
-cask 'mactex'
 
 # Install IDEs.
 cask 'sublime-text'
@@ -29,10 +22,6 @@ cask 'intellij-idea'
 cask 'skype'
 cask 'slack'
 cask 'dropbox'
-
-# Install virtualization tools.
-cask 'virtualbox'
-cask 'virtualbox-extension-pack'
 
 # Install additional software.
 cask 'google-chrome'
