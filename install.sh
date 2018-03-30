@@ -55,3 +55,9 @@ cp .profile "$HOME/.profile"
 
 # Configure macOS defaults.
 source .macos
+
+printf "\nSome of the configuration requires a restart of your mac. Would you like to do that now? (y/n)"
+if [[ "$U_RESP" =~ ^(y|Y|yes|Yes)$ ]]; then
+  sudo shutdown -r now
+fi
+
