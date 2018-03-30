@@ -7,9 +7,6 @@ sudo -v
 # executing.
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-# Configure macOS defaults.
-source .macos
-
 # Check if Homebrew is already installed on the system, if not, download it.
 if [[ "$(which brew)" ]]; then
   printf "Homebrew already installed..updating..\n"
@@ -55,3 +52,6 @@ fi
 
 # Copy .profile.
 cp .profile "$HOME/.profile"
+
+# Configure macOS defaults.
+source .macos
