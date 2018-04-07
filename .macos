@@ -130,8 +130,14 @@ defaults write com.apple.Safari WarnAboutFraudulentWebsites -bool true
 defaults write com.apple.dock wvous-br-corner -int 10
 defaults write com.apple.dock wvous-br-modifier -int 0
 
-# Set the icon size of Dock items to 36 pixels.
+# Set the icon size of Dock icons to 32 pixels.
 defaults write com.apple.dock tilesize -int 32
+
+# Set the magnified size of Dock icons to 96 pixels.
+defaults write com.apple.dock largesize -int 96
+
+# Make Dock icons of hidden applications translucent.
+defaults write com.apple.dock showhidden -bool true
 
 # Show indicator lights for open applications in the Dock.
 defaults write com.apple.dock show-process-indicators -bool true
@@ -139,9 +145,8 @@ defaults write com.apple.dock show-process-indicators -bool true
 # Don’t automatically rearrange Spaces based on most recent use.
 defaults write com.apple.dock mru-spaces -bool false
 
-# Make Dock icons of hidden applications translucent.
-defaults write com.apple.dock showhidden -bool true
-
+# Make minimized windows appear as sucked to the dock.
+defaults write com.apple.dock mineffect -string suck
 
 ###############################################################################
 # Photos                                                                      #
