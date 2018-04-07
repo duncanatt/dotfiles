@@ -39,6 +39,25 @@
 *.fls
 *.fdb_latexmk
 
+# IntelliJ IDEA-generated files and directories.
+.idea/
+*.ipr
+*.iml
+*.iws
 
+# Eclipse-generated files and directories.
+.settings/
+.classpath
+.project
 
+# NetBeans-generated files and directories.
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
 
+# Tool-generated files and directories.
+target/
