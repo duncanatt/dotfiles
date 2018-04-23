@@ -19,8 +19,10 @@
 *.so
 *.lib
 
-# Dump and log files.
+# Dump, temporary and log files.
 *.dump
+*.tmp
+*.temp
 *.log
 *.blg
 
