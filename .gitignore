@@ -63,3 +63,4 @@ nb-configuration.xml
 
 # Tool-generated files and directories.
 target/
+doc/
