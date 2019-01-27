@@ -14,25 +14,12 @@ defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
 # Automatically quit printer app once the print jobs complete.
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 
-# Save screen captures to Desktop.
-defaults write com.apple.screencapture location -string "$HOME/Desktop"
-
-# Save screen captures in PNG format (other options: BMP, GIF, JPG, PDF, TIFF).
-defaults write com.apple.screencapture type -string "png"
-
-# Disable shadow in screen captures.
-defaults write com.apple.screencapture disable-shadow -bool true
-
 # Do not create .DS_Store files on network and removable volumes.
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
 # Disable spelling auto-correct.
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
-
-# Require password immediately after sleep or screen saver begins. DO NOT WORK IN HIGH SIERRA
-#defaults write com.apple.screensaver askForPassword -int 1
-#defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 ################################################################################
 # Keyboard and localization settings.                                          #
@@ -69,8 +56,8 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 defaults write com.apple.finder ShowStatusBar -bool true
 defaults write com.apple.finder ShowPathbar -bool true
 
-# Permit text to be selected in Quick Look.
-defaults write com.apple.finder QLEnableTextSelection -bool true
+# Permit text to be selected in Quick Look. DOES NOT WORK ON MOJAVE
+# defaults write com.apple.finder QLEnableTextSelection -bool true
 
 # When performing a search, do it from the current folder.
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
@@ -78,9 +65,9 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 # Disable warning dialog when changing a file extension.
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
-# Set the default location for Finder windows to the user's desktop.
-defaults write com.apple.finder NewWindowTarget -string "PfDe"
-defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desktop/"
+# Set the default location for Finder windows to the user's desktop. DOES NOT WORK ON MOJAVE
+# defaults write com.apple.finder NewWindowTarget -string "PfDe"
+# defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desktop/"
 
 
 ################################################################################
@@ -146,7 +133,7 @@ defaults write com.apple.dock show-process-indicators -bool true
 defaults write com.apple.dock mru-spaces -bool false
 
 # Make minimized windows appear as sucked to the dock.
-defaults write com.apple.dock mineffect -string suck
+defaults write com.apple.dock mineffect -string "suck"
 
 ###############################################################################
 # Photos                                                                      #

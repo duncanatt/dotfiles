@@ -11,7 +11,6 @@ brew 'git'
 # Install development languages and frameworks.
 brew 'python3'
 brew 'erlang'
-brew 'go'
 cask 'java'
 
 # Install IDEs.
@@ -25,7 +24,6 @@ cask 'dropbox'
 
 # Install additional software.
 cask 'google-chrome'
-cask 'grammarly'
 cask 'skim'
 cask 'android-file-transfer'
 cask 'flux'
