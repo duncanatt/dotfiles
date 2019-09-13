@@ -1,3 +1,6 @@
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+![GitHub All Releases](https://img.shields.io/github/downloads/duncanatt/dotfiles/total)
+
 # Yet another dotfiles! 
 
 Like others that may be found on-line, this dotfiles collection tries to make the process of setting up a new macOS installation as painless as possible. 
