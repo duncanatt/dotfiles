@@ -12,6 +12,7 @@ call plug#begin('~/.vim/plugged')
 " On-demand loading
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
+Plug 'scrooloose/nerdcommenter'
 Plug 'vim-airline/vim-airline'
 Plug 'sheerun/vim-polyglot'
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
