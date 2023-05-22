@@ -1,52 +1,51 @@
-
 # Configure core options, user information and credential management.
 [core]
-    editor = vim
+    editor=vim
 [push]
-    default = simple
+    default=simple
 [user]
-    name = U_NAME
-    email = U_EMAIL
+    name=Duncan Paul Attard
+    email=duncanatt@gmail.com
 [credential]
-    helper = osxkeychain
+    helper=osxkeychain
 
 # Configure colors.
 [color]
-    ui = true
+    ui=true
 [color "branch"]
-    current = yellow bold
-    local = green bold
-    remote = cyan bold
+    current=yellow bold
+    local=green bold
+    remote=cyan bold
 [color "diff"]
-    meta = yellow bold
-    frag = magenta bold
-    old = red bold
-    new = green bold
-    whitespace = red reverse
+    meta=yellow bold
+    frag=magenta bold
+    old=red bold
+    new=green bold
+    whitespace=red reverse
 [color "status"]
-    added = green bold
-    changed = yellow bold
-    untracked = red bold
+    added=green bold
+    changed=yellow bold
+    untracked=red bold
 
 # Configure URL shorthands.
 [url "https://bitbucket.org/"]
-    insteadOf = bb:
+    insteadOf=bb:
 [url "https://github.com/"]
-    insteadOf = gh:
+    insteadOf=gh:
 [url "https://gist.github.com/"]
-    insteadOf = gist:
+    insteadOf=gist:
 [url "https://gitlab.com/"]
-    insteadOf = gl:
+    insteadOf=gl:
 
 # Configure common aliases.
 [alias]
-    a = add
-    cm = commit -m
-    ca = commit -a
-    s = status
-    d = diff
-    pom = push origin master
-    pog = push origin gh-pages
-    puom = pull origin master
-    puog = pull origin gh-pages
-    cob = checkout -b
+    a=add
+    cm=commit -m
+    ca=commit -a
+    s=status
+    d=diff
+    pom=push origin main
+    pog=push origin gh-pages
+    puom=pull origin master
+    puog=pull origin gh-pages
+    cob=checkout -b
