@@ -25,12 +25,12 @@ function lst {
 # Listing aliases. The user name of the owner effecting the listing alias is 
 # highlighted in the displayed results. A count of the objects listed is also 
 # provided.
-# The 'll' and 'la' aliases list visible files and all files respectively; 'lld'
-# and 'llf' list all directories and all files respectively.
+# The 'll' and 'la' aliases list visible files and all files respectively; 'ld'
+# and 'lf' list all directories and all files respectively.
 alias ll='lst "CLICOLOR_FORCE=1 ls -l" "object"'
 alias la='lst "CLICOLOR_FORCE=1 ls -la" "object"'
-alias lld='lst "CLICOLOR_FORCE=1 ls -la | grep --color=never ^d" "dir"'
-alias llf='lst "CLICOLOR_FORCE=1 ls -la | grep --color=never ^-" "file"'
+alias ld='lst "CLICOLOR_FORCE=1 ls -la | grep --color=never ^d" "dir"'
+alias lf='lst "CLICOLOR_FORCE=1 ls -la | grep --color=never ^-" "file"'
 
 # Override 'grep' to always enable color matching.
 alias grep='grep --color=always'
